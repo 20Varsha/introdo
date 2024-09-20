@@ -1,0 +1,229 @@
+/* General Layout */
+h1,h2,h3{
+  color: #361863;
+}
+
+.tabs-card p{
+  color: #36186399 !important;
+  font-size: 16px!important;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.tabs-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.tabs-header {
+  text-align: center;
+}
+
+.tabs-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.tabs-navigation {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* General tab-button styles */
+.tab-button {
+  padding: 10px 20px;
+  border: 1px solid #361863;
+  cursor: pointer;
+  border-radius: 25px;
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+/* Blue tab styles */
+.tab-button.blue-tab {
+  color: #361863;
+  background-color: #ffffff;
+}
+
+.tab-button.blue-tab.active {
+  background-color: #3A86FF;
+  border: none;
+  color: white;
+}
+
+/* Purple tab styles */
+.tab-button.purple-tab {
+  color: #361863;
+  background-color: #ffffff;
+}
+
+.tab-button.purple-tab.active {
+  background-color: #9b5de5;
+  border: none;
+  color: white;
+}
+
+/* Orange tab styles */
+.tab-button.orange-tab {
+  color: #361863;
+  background-color: #ffffff;
+}
+
+.tab-button.orange-tab.active {
+  background-color: #FF6F00;
+  border: none;
+  color: white;
+}
+
+/* Content */
+.tabs-content {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 162px;
+}
+
+.tabs-sidebar {
+  width: 25%;
+}
+
+.tabs-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tabs-sidebar ul li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4f4f4f;
+  display: flex;
+  align-items: center;
+}
+
+.tabs-main-content {
+  width: 70%;
+  position: relative;
+}
+
+.tabs-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.tabs-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.tabs-card p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Blue Tab Theme */
+.blue-tab .tab-button.active {
+  background-color: #5c9cff;
+}
+
+.blue-tab .tabs-card {
+  border: solid 1px #A4C7FF;
+}
+
+/* Purple Tab Theme */
+.purple-tab .tab-button.active {
+  background-color: #a119e0;
+}
+
+.purple-tab .tabs-card {
+  border: solid 1px rgb(153, 0, 255);
+}
+
+/* Orange Tab Theme */
+.orange-tab .tab-button.active {
+  background-color: #ffa15c;
+}
+
+.orange-tab .tabs-card {
+  border: solid 1px #ffa15c;
+}
+
+/* hr styles */
+.blue-tab .tabs-main-content hr{
+  border: solid 1px #A4C7FF;
+}
+
+.tab-icon-wrapper img{
+  width: 50px;
+  height: 50px;
+}
+
+/* Layered Background for Card */
+.blue-tab .tabs-main-content:after {
+  content: "";
+  position: absolute;
+  top: 66px;
+  left: 64px;
+  width: 100%;
+  height: 100%;
+  background-color: #81B2FF;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.blue-tab .tabs-main-content:before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #A4C7FF;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* Align text and icon in one line */
+.tab-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon styling */
+.icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* Off-white background for all */
+}
+
+/* When a tab is active */
+.tab-button.active .icon-wrapper {
+  background-color: #fff;
+}
+
+

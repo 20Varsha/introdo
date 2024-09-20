@@ -1,0 +1,22 @@
+/* src/components/ProgressBar.css */
+.progress-bar-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .progress-bar {
+    background-color: #e6e6e6;
+    width: 80%;
+    height: 20px;
+    margin: 0 auto;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #5c5cff;
+    transition: width 1s ease-in-out;
+  }
+  

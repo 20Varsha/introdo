@@ -1,0 +1,44 @@
+/* src/components/Card.css */
+.card-container {
+    position: relative;
+    background: #fff; /* White background for the card */
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-shadow {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 15px;
+    background: #000; /* Background for the shadow effect */
+    box-shadow:
+      0 6px 12px rgba(0, 0, 0, 0.1), /* Light outer shadow */
+      0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger outer shadow */
+    z-index: -1;
+  }
+  
+  .card-main {
+    background: #fff; /* White background for the card */
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow:
+      0 4px 8px rgba(255, 255, 255, 0.9), /* Subtle inner shadow */
+      0 8px 16px rgba(0, 0, 0, 0.1); /* Slightly stronger inner shadow */
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
