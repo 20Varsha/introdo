@@ -20,7 +20,7 @@ const TabsComponent = () => {
             colorClass: "blue-tab",
         },
         {
-            title: "Line Managers",
+            title: "For Line Managers",
             icon: managerIcon,
             content: {
                 descriptionOne: "Simplify task management for a boost in team productivity. Clear assignments, monitored deadlines and smoother workflows await!",
@@ -31,7 +31,7 @@ const TabsComponent = () => {
             colorClass: "purple-tab",
         },
         {
-            title: "Employees",
+            title: "For Employees",
             icon: employeeIcon,
             content: {
                 descriptionOne: "Get clarity on tasks, access key information and perform tasks independently, fostering a culture of trust and ownership.",
