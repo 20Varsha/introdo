@@ -7,8 +7,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar /> {/* Add Navbar here */}
-        <h1>Triple The Benefits!</h1>
+        <Navbar /> 
         <Tabs />
       </header>
     </div>
