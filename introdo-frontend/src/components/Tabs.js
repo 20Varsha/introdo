@@ -93,7 +93,7 @@ const TabsComponent = () => {
                                     <img src={bullet.icon} alt="Bullet icon" className="bullet-icon" />
                                     <span>{bullet.text}</span>
                                 </div>
-                                {index < tabs[activeTab].bullets.length - 1 && <hr />}
+                                {index < tabs[activeTab].bullets.length - 1 && <hr className="mt-4 mb-4" />}
                             </li>
                         ))}
                     </ul>
@@ -101,9 +101,9 @@ const TabsComponent = () => {
                 <div className="tabs-main-content">
                     <div className="tabs-card">
                         <p>{tabs[activeTab].content.descriptionOne}</p>
-                        <hr />
+                        <hr className="mt-4 mb-4"/>
                         <p>{tabs[activeTab].content.descriptionTwo}</p>
-                        <hr />
+                        <hr  className="mt-4 mb-4" />
                         <p>{tabs[activeTab].content.descriptionThree}</p>
                     </div>
                 </div>
