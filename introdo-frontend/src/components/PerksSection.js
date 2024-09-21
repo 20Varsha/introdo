@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import '../assets/styles/PerksSection.css';
 import user from "../assets/images/user.png";
 import arrow from "../assets/icons/up-arrow.png";
+import AED from "../assets/images/AED.png";
+import SAR from "../assets/images/SAR.png";
+import OMR from "../assets/images/OMR.png";
+
+const Skeleton = () => (
+  <div className="skeleton-container">
+    <div className="skeleton-text" />
+    <div className="skeleton-text" />
+  </div>
+);
 
 const Perks = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState({ AED: '', SAR: '', OMR: '' });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate a network request
+      setData({
+        AED: "90,718.94",
+        SAR: "678,100.00",
+        OMR: "67,693.80"
+      });
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="perks-container">
       <button className="single-button">
@@ -11,20 +38,54 @@ const Perks = () => {
       </button>
       <h1 className="perks-title">Unlock The Perks!</h1>
       <div className="perks-grid">
+
+        {/* Global payrol section */}
         <div className="perk global-payroll">
-          <h2>Global Payroll Simplicity</h2>
-          <p>Manage multi-currency payroll across the GCC and beyond, in English & Arabic. Seamless onboarding included!</p>
-          <div className="payroll-info">
-            <p>AED: 40,123.54</p>
-            <p>SAR: 11,234.00</p>
-            <p>OMR: 5,987.00</p>
+          <h1>Global Payroll Simplicity</h1>
+          <p className="content mt-2">Manage multi-currency payroll across the GCC and beyond, in English & Arabic. Seamless onboarding included!</p>
+          <div className="payroll-info-container">
+          <h4>Run Payroll</h4>
+            <div className="currency-info">
+              <img src={AED} alt="AED" className="currency-image" />
+              {isLoading ? (
+                <Skeleton />
+              ) : (
+                <>
+                  <Skeleton />
+                  <p>AED: {data.AED}</p>
+                </>
+              )}
+            </div>
+            <div className="currency-info">
+              <img src={SAR} alt="SAR" className="currency-image" />
+              {isLoading ? (
+                <Skeleton />
+              ) : (
+                <>
+                  <Skeleton />
+                  <p>SAR: {data.SAR}</p>
+                </>
+              )}
+            </div>
+            <div className="currency-info">
+              <img src={OMR} alt="OMR" className="currency-image" />
+              {isLoading ? (
+                <Skeleton />
+              ) : (
+                <>
+                  <Skeleton />
+                  <p>OMR: {data.OMR}</p>
+                </>
+              )}
+            </div>
           </div>
         </div>
 
+        {/* Insight section */}
         <div className="perk smart-insights">
-        <button className="custom-button">
-              45% <img src={arrow} alt="Arrow" className="arrow" />
-            </button>
+          <button className="custom-button">
+            45% <img src={arrow} alt="Arrow" className="arrow" />
+          </button>
           <div className="user-details-container">
             <div className="user-info">
               <img src={user} alt="Fatima Saleem" className="user-image" />
@@ -43,8 +104,6 @@ const Perks = () => {
               <p className="progress-text">14:36 out of 24:00 hours</p>
             </div>
           </div>
-
-
           <div className="insights-description">
             <h1 className="text-dark">Smart Insights</h1>
             <p className="text-dark">Craft customized reports and dashboards to steer data-driven decisions. All your historic employee data within one end-to-end solution.</p>

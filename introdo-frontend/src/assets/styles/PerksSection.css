@@ -61,7 +61,7 @@
 }
 
 .perk h2 {
-  font-size: 1.3rem;
+  font-size: 31px;
   margin-bottom: 10px;
   color: white;
 }
@@ -69,21 +69,6 @@
 .perk p {
   margin-bottom: 10px;
   color: white;
-}
-
-/* Global Payroll Section */
-.global-payroll {
-  background: linear-gradient(135deg, #ff7a18, #FD4190);
-  color: white;
-  border-radius: 32px;
-  height: 495px;
-  width: 88%;
-}
-
-.payroll-info {
-  margin-top: 15px;
-  font-size: 1rem;
-  font-weight: bold;
 }
 
 /* Styling the new insights-description div */
@@ -115,19 +100,6 @@
     width: 100%;
   box-sizing: border-box;
 }
-
-/* .user-details-container {
-  background: white;
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 82%;
-  margin-left: 34px;
-  margin-top: 40px;
-} */
 
 .user-info {
   display: flex;
@@ -280,3 +252,92 @@
   margin-left: 8px;
   font-size: 1.2rem;
 }
+
+
+/* Global Payroll Section */
+.global-payroll {
+  background: linear-gradient(135deg, #ff7a18, #FD4190);
+  color: white;
+  border-radius: 32px;
+  height: 497px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Archivo", sans-serif;
+  opacity: 0.8;
+}
+
+.global-payroll h1 {
+  font-family: "Archivo", sans-serif;
+  color: white;
+  text-align: start;
+  font-size: 31px;
+}
+
+.content {
+  font-family: "Archivo", sans-serif;
+  color: white;
+  text-align: start;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.payroll-info-container {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  margin-left: 15px;
+  position: relative; 
+  z-index: 2;
+  overflow: hidden; 
+}
+
+.currency-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.currency-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; 
+}
+
+.skeleton-container {
+  display: flex;
+  flex-direction: column; 
+  margin-right: 10px; 
+}
+
+.skeleton-text {
+  width: 118px;
+  height: 8px;
+  background-color: #e0e0e094;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.payroll-info-container p {
+  color: black !important;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.payroll-info-container h4 {
+  color: black !important;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: start;
+}
+

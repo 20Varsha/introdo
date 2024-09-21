@@ -238,7 +238,6 @@ h1,h2,h3{
 }
 
 /* Purple */
-/* Layered Background for Card */
 .purple-tab .tabs-main-content:after {
   content: "";
   position: absolute;
