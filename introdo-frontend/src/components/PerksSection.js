@@ -5,6 +5,12 @@ import arrow from "../assets/icons/up-arrow.png";
 import AED from "../assets/images/AED.png";
 import SAR from "../assets/images/SAR.png";
 import OMR from "../assets/images/OMR.png";
+import google from "../assets/images/google.png";
+import microsoft from "../assets/images/microsoft.png";
+import dynamics from "../assets/images/dynamics.png";
+import oracle from "../assets/images/oracle.png";
+import netsuit from "../assets/images/netsuit.png";
+import largeFrame from "../assets/images/large-frame.png";
 
 const Skeleton = () => (
   <div className="skeleton-container">
@@ -105,7 +111,7 @@ const Perks = () => {
             </div>
           </div>
           <div className="insights-description">
-            <h1 className="text-dark">Smart Insights</h1>
+            <h1 className="text-dark text-center">Smart Insights</h1>
             <p className="text-dark">Craft customized reports and dashboards to steer data-driven decisions. All your historic employee data within one end-to-end solution.</p>
           </div>
         </div>
@@ -117,24 +123,26 @@ const Perks = () => {
             Maximize operational efficiency with zero data loss. Sync all your business tools
             with an open API for seamless data integration.
           </p>
-          <div class="icon-grid">
-            <div class="icon-box large-box"></div>
+          <div class="row ml-5">
+            <div class="col blue-box ml-4"></div>
+            <div class="col white-box ml-3"><img src={google} alt="Google" /></div>
+          </div>
+          <div class="row second-row">
+            <div class="col-3 white-box"><img src={microsoft} alt="Microsoft" /></div>
+            <div class="col-3 white-box"><img src={dynamics} alt="Dynamics" /></div>
+            <div class="col-3 pink-box"></div>
+          </div>
 
-            <div class="icon-box medium-box"></div>
-            <div class="icon-box medium-box"></div>
-            <div class="icon-box medium-box"></div>
-
-            <div class="icon-box small-box"></div>
-            <div class="icon-box small-box"></div>
-
-            <div class="icon-box wide-box"></div>
-            <div class="icon-box large-height-box"></div>
-            <div class="icon-box wide-box"></div>
-            <div class="icon-box small-box"></div>
-
+          <div class="row third-row">
+            <div class="col-3 orange-box"></div>
+            <div class="col-3 white-box"><img src={oracle} alt="Oracle" /></div>
+            <div class="col-4 "><img src={largeFrame} alt="Large Frame" /></div>
+          </div>
+          <div class="row fourth-row">
+            <div class="col-4 white-box box-purple"><img src={netsuit} alt="NetSuite" /></div>
+            <div class="col-3 box-blue"></div>
           </div>
         </div>
-
 
         <div className="perk rock-solid-compliance">
           <h2>Rock-Solid Compliance</h2>
