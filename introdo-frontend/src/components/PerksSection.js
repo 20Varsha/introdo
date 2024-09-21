@@ -44,7 +44,7 @@ const Perks = () => {
           <h1>Global Payroll Simplicity</h1>
           <p className="content mt-2">Manage multi-currency payroll across the GCC and beyond, in English & Arabic. Seamless onboarding included!</p>
           <div className="payroll-info-container">
-          <h4>Run Payroll</h4>
+            <h4>Run Payroll</h4>
             <div className="currency-info">
               <img src={AED} alt="AED" className="currency-image" />
               {isLoading ? (
@@ -110,16 +110,31 @@ const Perks = () => {
           </div>
         </div>
 
-
-        <div className="perk legacy-harmony">
+        {/* Legacy harmony section */}
+        <div class="perk legacy-harmony">
           <h2>Legacy Harmony</h2>
-          <p>Maximize operational efficiency with zero data loss. Sync all your business tools with an open API for seamless data integration.</p>
-          <div className="integration-icons">
-            <img src="google.png" alt="Google" />
-            <img src="microsoft.png" alt="Microsoft" />
-            <img src="oracle.png" alt="Oracle NetSuite" />
+          <p>
+            Maximize operational efficiency with zero data loss. Sync all your business tools
+            with an open API for seamless data integration.
+          </p>
+          <div class="icon-grid">
+            <div class="icon-box large-box"></div>
+
+            <div class="icon-box medium-box"></div>
+            <div class="icon-box medium-box"></div>
+            <div class="icon-box medium-box"></div>
+
+            <div class="icon-box small-box"></div>
+            <div class="icon-box small-box"></div>
+
+            <div class="icon-box wide-box"></div>
+            <div class="icon-box large-height-box"></div>
+            <div class="icon-box wide-box"></div>
+            <div class="icon-box small-box"></div>
+
           </div>
         </div>
+
 
         <div className="perk rock-solid-compliance">
           <h2>Rock-Solid Compliance</h2>
