@@ -132,7 +132,6 @@ const Perks = () => {
             <div class="col-3 white-box"><img src={dynamics} alt="Dynamics" /></div>
             <div class="col-3 pink-box"></div>
           </div>
-
           <div class="row third-row">
             <div class="col-3 orange-box"></div>
             <div class="col-3 white-box"><img src={oracle} alt="Oracle" /></div>
@@ -144,12 +143,14 @@ const Perks = () => {
           </div>
         </div>
 
-        <div className="perk rock-solid-compliance">
+        {/* Rock-Solid-Compliance section */}
+
+        <div className=" rock-solid-compliance">
           <h2>Rock-Solid Compliance</h2>
           <p>Stay GCC law-aligned amidst changing regulations. Worry-free compliance across locations, preventing penalties and legal hassles.</p>
         </div>
 
-        <div className="perk cloud-powered-savings">
+        <div className=" cloud-powered-savings">
           <h2>Cloud-Powered Savings</h2>
           <p>Centralize people management with one HR software. Save time and cut costs by leveraging cloud technology.</p>
         </div>
