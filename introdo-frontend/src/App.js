@@ -2,6 +2,7 @@ import React from "react";
 import Tabs from "./components/Tabs";
 import Navbar from "./components/Navbar";
 import PerksSection from "./components/PerksSection";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Navbar />
         <Tabs />
         <PerksSection />
+        <Footer/>
       </header>
     </div>
   );

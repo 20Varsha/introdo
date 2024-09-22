@@ -9,6 +9,8 @@ import communication from "../assets/icons/communication.png";
 
 const TabsComponent = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [intervalId, setIntervalId] = useState(null); // Track the interval ID
+
     const tabs = [
         {
             title: "For HR Managers",
@@ -57,22 +59,23 @@ const TabsComponent = () => {
         },
     ];
 
-    //Tabs change
+    // Set interval for automatic tab change
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveTab((prev) => (prev + 1) % tabs.length);
         }, 5000);
-        return () => clearInterval(interval);
+        setIntervalId(interval); 
+        return () => clearInterval(interval); 
     }, [tabs.length]);
 
+    // Handle tab click
     const handleTabClick = (index) => {
-        setActiveTab(index);
-        clearInterval();
-        setTimeout(() => {
-            const interval = setInterval(() => {
-                setActiveTab((prev) => (prev + 1) % tabs.length);
-            }, 5000);
-        }, 0);
+        clearInterval(intervalId); 
+        setActiveTab(index); 
+        const newInterval = setInterval(() => {
+            setActiveTab((prev) => (prev + 1) % tabs.length);
+        }, 5000);
+        setIntervalId(newInterval); 
     };
 
     return (
@@ -109,7 +112,8 @@ const TabsComponent = () => {
                         {tabs[activeTab].bullets?.map((bullet, index) => (
                             <li key={index} className="bullet-item">
                                 <div className="bullet-content">
-                                    <img src={bullet.icon} alt="Bullet icon" className="bullet-icon" />
+                                    {/* Add the 'colored-icon' class to change the color dynamically */}
+                                    <img src={bullet.icon} alt="Bullet icon" className="bullet-icon colored-icon" />
                                     <span>{bullet.text}</span>
                                 </div>
                                 {index < tabs[activeTab].bullets.length - 1 && <hr className="mt-4 mb-4" />}
