@@ -1,4 +1,20 @@
-/* General Layout */
+.single-button {
+  padding: 4px 10px;
+  border: 1px solid #FC1777;
+  cursor: pointer;
+  border-radius: 25px;
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.single-button:focus,
+.single-button:active {
+    outline: none; 
+    border: 1px solid #361863; 
+    box-shadow: none; 
+}
+
 h1,h2,h3{
   color: #361863;
 }

@@ -11,6 +11,11 @@ import dynamics from "../assets/images/dynamics.png";
 import oracle from "../assets/images/oracle.png";
 import netsuit from "../assets/images/netsuit.png";
 import largeFrame from "../assets/images/large-frame.png";
+import logo1 from "../assets/images/Logo1.png";
+import logo2 from "../assets/images/Logo2.png";
+import logo3 from "../assets/images/Logo3.png";
+import femaleAvatar from "../assets/images/female.png";
+import cloud from "../assets/images/cloud.png";
 
 const Skeleton = () => (
   <div className="skeleton-container">
@@ -25,7 +30,7 @@ const Perks = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate a network request
+      await new Promise(resolve => setTimeout(resolve, 2000));
       setData({
         AED: "90,718.94",
         SAR: "678,100.00",
@@ -42,7 +47,7 @@ const Perks = () => {
       <button className="single-button">
         WHY INTRODO?
       </button>
-      <h1 className="perks-title">Unlock The Perks!</h1>
+      <h1 className="perks-title text-center mt-4 mb-4">Unlock The Perks!</h1>
       <div className="perks-grid">
 
         {/* Global payrol section */}
@@ -144,16 +149,58 @@ const Perks = () => {
         </div>
 
         {/* Rock-Solid-Compliance section */}
-
-        <div className=" rock-solid-compliance">
-          <h2>Rock-Solid Compliance</h2>
-          <p>Stay GCC law-aligned amidst changing regulations. Worry-free compliance across locations, preventing penalties and legal hassles.</p>
+        <div className="rock-solid-compliance">
+          <div className="row mt-2">
+            <div className="col-8">
+              <h2 className="text-light">Rock-Solid Compliance</h2>
+              <p className="content">
+                Stay GCC law-aligned amidst changing regulations. Worry-free compliance across locations,
+                preventing penalties and legal hassles.
+              </p>
+            </div>
+            <div className="col-4">
+              <div className="logos">
+                <div className="d-flex">
+                  <div className="logo-wrapper">
+                    <img src={logo1} alt="Logo 1" />
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <div className="logo-wrapper">
+                    <img src={logo2} alt="Logo 2" />
+                  </div>
+                  <div className="half-box">
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <div className="bttom-logo">
+                    <img src={logo3} alt="Logo 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className=" cloud-powered-savings">
-          <h2>Cloud-Powered Savings</h2>
-          <p>Centralize people management with one HR software. Save time and cut costs by leveraging cloud technology.</p>
+        {/* Cloud-Powered Savings Section */}
+        <div className="cloud-powered-savings">
+          <div className="row">
+            <div className="col-6">
+              <div className="avatar-wrapper">
+                <img src={cloud} alt="Cloud Icon" className="cloud-icon" />
+                <img src={femaleAvatar} alt="Female Avatar" className="avatar" />
+              </div>
+            </div>
+            <div className="col-6">
+              <h2 className="text-light">Cloud-Powered Savings</h2>
+              <p className="content">
+                Centralize people management with one HR software. Save time and cut
+                costs by leveraging cloud technology.
+              </p>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   );
