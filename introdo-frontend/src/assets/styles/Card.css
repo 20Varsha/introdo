@@ -1,7 +1,6 @@
-/* src/components/Card.css */
 .card-container {
     position: relative;
-    background: #fff; /* White background for the card */
+    background: #fff; 
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -14,21 +13,21 @@
     right: -10px;
     bottom: -10px;
     border-radius: 15px;
-    background: #000; /* Background for the shadow effect */
+    background: #000; 
     box-shadow:
-      0 6px 12px rgba(0, 0, 0, 0.1), /* Light outer shadow */
-      0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger outer shadow */
+      0 6px 12px rgba(0, 0, 0, 0.1), 
+      0 12px 24px rgba(0, 0, 0, 0.2); 
     z-index: -1;
   }
   
   .card-main {
-    background: #fff; /* White background for the card */
+    background: #fff; 
     border-radius: 10px;
     padding: 20px;
     position: relative;
     box-shadow:
-      0 4px 8px rgba(255, 255, 255, 0.9), /* Subtle inner shadow */
-      0 8px 16px rgba(0, 0, 0, 0.1); /* Slightly stronger inner shadow */
+      0 4px 8px rgba(255, 255, 255, 0.9), 
+      0 8px 16px rgba(0, 0, 0, 0.1);
   }
   
   .card-title {

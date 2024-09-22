@@ -1,6 +1,6 @@
 // src/components/Card.js
 import React from "react";
-import "../assets/styles/Card.css"; // Updated CSS file
+import "../assets/styles/Card.css";
 
 const Card = ({ title, description }) => {
   return (

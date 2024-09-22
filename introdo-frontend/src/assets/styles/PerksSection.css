@@ -30,33 +30,6 @@
   margin-bottom: 20px;
 }
 
-/* Adjust for different screen sizes */
-@media (max-width: 1024px) {
-  .perks-grid {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columns on smaller screens */
-  }
-
-  .perks-grid .cloud-powered-savings,
-  .perks-grid .rock-solid-compliance {
-    grid-column: span 2;
-    /* Still span 2 columns on smaller screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .perks-grid {
-    grid-template-columns: 1fr;
-    /* 1 column on small screens */
-  }
-
-  .perks-grid .cloud-powered-savings,
-  .perks-grid .rock-solid-compliance {
-    grid-column: span 1;
-    /* Full-width cards on small screens */
-  }
-}
-
 .perk {
   background-color: white;
   border-radius: 12px;
@@ -78,20 +51,29 @@
   color: white;
 }
 
-/* Styling the new insights-description div */
 .insights-description {
   background: linear-gradient(135deg, #FEBED9, #C8DDFF);
-  padding: 11px 15px 8px 16px;
+  padding: 18px 15px 12px 16px;
+  ;
   border-radius: 32px;
   color: #fff;
   height: 192px;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 41px;
+  text-align: center;
 }
 
 .insights-description p {
   margin: 0;
   font-size: 1rem;
+  font-family: "Archivo", sans-serif;
+}
+
+.insights-description h1 {
+  font-family: "Archivo", sans-serif;
+  text-align: start;
+  font-size: 31px;
 }
 
 /* Smart Insights Section */
@@ -136,7 +118,7 @@
 
 .text-muted {
   color: #6c757d !important;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .custom-hr {
@@ -166,6 +148,7 @@
   height: 9px;
   width: 100%;
   overflow: hidden;
+  transition: width 1s ease-in-out;
 }
 
 .progress-bar {
@@ -194,9 +177,9 @@
 
 .single-button:focus,
 .single-button:active {
-    outline: none; 
-    border: 1px solid #361863; 
-    box-shadow: none; 
+  outline: none;
+  border: 1px solid #361863;
+  box-shadow: none;
 }
 
 .user-details-container {
@@ -210,9 +193,8 @@
   width: 82%;
   margin-left: 34px;
   position: relative;
-  margin-top: 40px;
+  margin-top: 41px;
   z-index: 1;
-  /* Ensures the user container is below the button */
 }
 
 .custom-button {
@@ -243,7 +225,6 @@
   margin-left: 8px;
   font-size: 1.2rem;
 }
-
 
 /* Global Payroll Section */
 .global-payroll {
@@ -309,7 +290,7 @@
 }
 
 .skeleton-text {
-  width: 118px;
+  width: 105px;
   height: 8px;
   background-color: #e0e0e094;
   border-radius: 4px;
@@ -331,7 +312,6 @@
   display: flex;
   justify-content: start;
 }
-
 
 /* Legacy Harmony Section */
 .legacy-harmony {
@@ -582,15 +562,16 @@
 }
 
 .cloud-powered-savings .avatar {
-    width: 186%;
-    position: relative;
-    right: 25px;
-    border-bottom-left-radius: 18px;
-    top: 10px;
-    background-image:  url('../images/vector.png');;
-    background-position: left;
-    background-size: 61% 92%;
-    background-repeat: no-repeat;
+  width: 186%;
+  position: relative;
+  right: 25px;
+  border-bottom-left-radius: 18px;
+  top: 10px;
+  background-image: url('../images/vector.png');
+  ;
+  background-position: left;
+  background-size: 61% 92%;
+  background-repeat: no-repeat;
 }
 
 .cloud-powered-savings .cloud-icon {
@@ -604,4 +585,28 @@
   border-radius: 50%;
   padding: 5px;
   z-index: 1;
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .perks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 1;
+  }
 }
