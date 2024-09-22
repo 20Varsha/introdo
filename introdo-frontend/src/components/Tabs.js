@@ -61,6 +61,9 @@ const TabsComponent = () => {
     return (
         <div className="tabs-wrapper">
             <div className="tabs-header">
+                <button className="single-button mt-4 mb-5">
+                    EMPOWER EVERY ROLE
+                </button>
                 <h1>Triple The Benefits!</h1>
                 <div className="tabs-navigation mt-5">
                     {tabs.map((tab, index) => (
@@ -101,9 +104,9 @@ const TabsComponent = () => {
                 <div className="tabs-main-content">
                     <div className="tabs-card">
                         <p>{tabs[activeTab].content.descriptionOne}</p>
-                        <hr className="mt-4 mb-4"/>
+                        <hr className="mt-4 mb-4" />
                         <p>{tabs[activeTab].content.descriptionTwo}</p>
-                        <hr  className="mt-4 mb-4" />
+                        <hr className="mt-4 mb-4" />
                         <p>{tabs[activeTab].content.descriptionThree}</p>
                     </div>
                 </div>
