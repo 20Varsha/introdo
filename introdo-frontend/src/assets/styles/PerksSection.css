@@ -138,6 +138,7 @@
   margin-top: 10px;
   text-align: center;
   font-weight: 700;
+  color: black;
 }
 
 .progress-bar-container {
@@ -562,15 +563,14 @@
 }
 
 .cloud-powered-savings .avatar {
-  width: 186%;
+  width: 99%;
   position: relative;
   right: 25px;
   border-bottom-left-radius: 18px;
   top: 10px;
-  background-image: url('../images/vector.png');
-  ;
+  background-image: url('../images/vector.png');;
   background-position: left;
-  background-size: 61% 92%;
+  background-size: 90% 106%;
   background-repeat: no-repeat;
 }
 

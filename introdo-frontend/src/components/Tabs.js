@@ -9,6 +9,8 @@ import communication from "../assets/icons/communication.png";
 
 const TabsComponent = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [intervalId, setIntervalId] = useState(null); // Track the interval ID
+
     const tabs = [
         {
             title: "For HR Managers",
@@ -57,22 +59,22 @@ const TabsComponent = () => {
         },
     ];
 
-    //Tabs change
+    // Set interval for automatic tab change
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveTab((prev) => (prev + 1) % tabs.length);
         }, 5000);
-        return () => clearInterval(interval);
+        setIntervalId(interval); 
+        return () => clearInterval(interval); 
     }, [tabs.length]);
-
+    // Handle tab click
     const handleTabClick = (index) => {
-        setActiveTab(index);
-        clearInterval();
-        setTimeout(() => {
-            const interval = setInterval(() => {
-                setActiveTab((prev) => (prev + 1) % tabs.length);
-            }, 5000);
-        }, 0);
+        clearInterval(intervalId); 
+        setActiveTab(index); 
+        const newInterval = setInterval(() => {
+            setActiveTab((prev) => (prev + 1) % tabs.length);
+        }, 5000);
+        setIntervalId(newInterval); 
     };
 
     return (
