@@ -25,15 +25,13 @@ const Footer = () => {
                         <h3>HR Updates, Straight To Your Inbox - Subscribe Today</h3>
                         <button className='footer-button'>EN <img src={arrow} alt="Arrow" className="nav-arrow" /></button>
                     </div>
-
                     <div className="header-container">
                         <div className="subscribe-box">
                             <div className="input-wrapper ml-5">
-                                <input type="email" placeholder="Enter Work Email" />
+                                <input type="email" className='email-input' placeholder="Enter Work Email" />
                                 <img src={arrowButton} alt="Button" className='arrow-img' />
                             </div>
                         </div>
-
                         <div className="social-icons">
                             <div className="social-icon">
                                 <img src={facebook} alt="Facebook icon" />
@@ -45,7 +43,6 @@ const Footer = () => {
                                 <img src={linkedin} alt="LinkedIn icon" />
                             </div>
                         </div>
-
                     </div>
                 </div>
 

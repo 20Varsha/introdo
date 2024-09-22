@@ -67,6 +67,7 @@ const TabsComponent = () => {
         setIntervalId(interval); 
         return () => clearInterval(interval); 
     }, [tabs.length]);
+
     // Handle tab click
     const handleTabClick = (index) => {
         clearInterval(intervalId); 
@@ -111,7 +112,8 @@ const TabsComponent = () => {
                         {tabs[activeTab].bullets?.map((bullet, index) => (
                             <li key={index} className="bullet-item">
                                 <div className="bullet-content">
-                                    <img src={bullet.icon} alt="Bullet icon" className="bullet-icon" />
+                                    {/* Add the 'colored-icon' class to change the color dynamically */}
+                                    <img src={bullet.icon} alt="Bullet icon" className="bullet-icon colored-icon" />
                                     <span>{bullet.text}</span>
                                 </div>
                                 {index < tabs[activeTab].bullets.length - 1 && <hr className="mt-4 mb-4" />}

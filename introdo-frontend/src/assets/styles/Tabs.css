@@ -356,3 +356,15 @@ h3 {
   height: 38px;
   margin-right: 8px;
 }
+
+.blue-tab .colored-icon {
+  filter: hue-rotate(16deg) saturate(3) brightness(1.2);
+}
+
+.purple-tab .colored-icon {
+  filter: hue-rotate(30deg) saturate(4) brightness(1.1);
+}
+
+.orange-tab .colored-icon {
+  filter: hue-rotate(180deg) saturate(3) brightness(1.2);
+}
