@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "../assets/styles/Tabs.css"; // Assuming you have this CSS file
-import userIcon from "../assets/icons/user-remove.png"; // Adjust path as needed
+import React, { useState, useEffect } from "react";
+import "../assets/styles/Tabs.css";
+import userIcon from "../assets/icons/user-remove.png";
 import managerIcon from "../assets/icons/manager.png";
 import employeeIcon from "../assets/icons/employee.png";
 import chat from "../assets/icons/chat.png";
@@ -9,7 +9,6 @@ import communication from "../assets/icons/communication.png";
 
 const TabsComponent = () => {
     const [activeTab, setActiveTab] = useState(0);
-
     const tabs = [
         {
             title: "For HR Managers",
@@ -58,6 +57,24 @@ const TabsComponent = () => {
         },
     ];
 
+    //Tabs change
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveTab((prev) => (prev + 1) % tabs.length);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, [tabs.length]);
+
+    const handleTabClick = (index) => {
+        setActiveTab(index);
+        clearInterval();
+        setTimeout(() => {
+            const interval = setInterval(() => {
+                setActiveTab((prev) => (prev + 1) % tabs.length);
+            }, 5000);
+        }, 0);
+    };
+
     return (
         <div className="tabs-wrapper">
             <div className="tabs-header">
@@ -70,7 +87,7 @@ const TabsComponent = () => {
                         <button
                             key={index}
                             className={`tab-button ${tab.colorClass} ${activeTab === index ? "active" : ""}`}
-                            onClick={() => setActiveTab(index)}
+                            onClick={() => handleTabClick(index)}
                         >
                             <div className="tab-content">
                                 <div className={`icon-wrapper ${activeTab === index ? tab.colorClass : ""}`}>
@@ -86,7 +103,6 @@ const TabsComponent = () => {
                     ))}
                 </div>
             </div>
-
             <div className={`tabs-content ${tabs[activeTab].colorClass}`}>
                 <div className="tabs-sidebar">
                     <ul>

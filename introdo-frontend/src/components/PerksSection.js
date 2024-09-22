@@ -27,7 +27,10 @@ const Skeleton = () => (
 const Perks = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState({ AED: '', SAR: '', OMR: '' });
+  const [totalSeconds, setTotalSeconds] = useState(0); // Total time elapsed in seconds
+  const [progress, setProgress] = useState(0); // Progress percentage
 
+  //Skeleton
   useEffect(() => {
     const fetchData = async () => {
       await new Promise(resolve => setTimeout(resolve, 2000));
@@ -38,9 +41,36 @@ const Perks = () => {
       });
       setIsLoading(false);
     };
-
     fetchData();
   }, []);
+
+  //Progress-bar timer
+  useEffect(() => {
+    const totalDuration = 3600;
+    const interval = setInterval(() => {
+      setTotalSeconds((prev) => {
+        if (prev < totalDuration) {
+          const newSeconds = prev + 1;
+          if (newSeconds % 59 === 0) {
+            const newProgress = Math.floor(newSeconds / 59);
+            setProgress(newProgress);
+          }
+          return newSeconds;
+        } else {
+          clearInterval(interval);
+          return prev;
+        }
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Format total seconds into MM:SS
+  const formatTime = (totalSeconds) => {
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  };
 
   return (
     <div className="perks-container">
@@ -95,7 +125,7 @@ const Perks = () => {
         {/* Insight section */}
         <div className="perk smart-insights">
           <button className="custom-button">
-            45% <img src={arrow} alt="Arrow" className="arrow" />
+            {Math.floor(progress)}% <img src={arrow} alt="Arrow" className="arrow" />
           </button>
           <div className="user-details-container">
             <div className="user-info">
@@ -108,11 +138,10 @@ const Perks = () => {
             <hr className="custom-hr" />
             <div className="worked-hours">
               <p className="text-muted text-center">Hours Worked</p>
-              <h3>14:36 Hours</h3>
+              <h3>{formatTime(totalSeconds)} Hours</h3>
               <div className="progress-bar-container">
-                <div className="progress-bar"></div>
+                <div className="progress-bar" style={{ width: `${progress}%` }}></div>
               </div>
-              <p className="progress-text">14:36 out of 24:00 hours</p>
             </div>
           </div>
           <div className="insights-description">
@@ -200,7 +229,6 @@ const Perks = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );
