@@ -8,6 +8,14 @@
   padding: 0 40px;
 }
 
+.navbar-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
 .navbar-content {
   max-width: 1200px;
   display: flex;
@@ -90,4 +98,252 @@
   width: 22px;
   height: 22px;
   vertical-align: middle;
+}
+
+.promo-banner {
+  background: linear-gradient(90deg, #FEBED9, #C8DDFF);
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+/* Media query*/
+
+/* iPhone SE (1st and 2nd generation), 5S, 5, 5C - 320px width */
+@media only screen and (max-width: 320px) {
+  .navbar {
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .navbar-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-logo img {
+    height: 30px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .promo-banner {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    position: relative;
+    left: 96px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    right: 95px;
+  }
+  .tabs-header h1 {
+    font-size: 30px;
+  }
+}
+
+/* iPhone 11, iPhone XR, iPhone 12 Mini (375px width) */
+@media only screen and (max-width: 375px) {
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .navbar-logo img {
+    height: 32px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar-links li {
+    margin-bottom: 8px;
+  }
+
+  .promo-banner {
+    font-size: 13px;
+  }
+
+  .navbar-toggle {
+    display: block;
+    position: relative;
+    left: 96px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    right: 95px;
+  }
+  .tabs-header h1 {
+    font-size: 30px;
+  }
+}
+
+/* iPhone 11 Pro Max, iPhone 12/13/14 Pro Max (414px width) */
+@media only screen and (max-width: 414px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .navbar-logo img {
+    height: 35px;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  .promo-banner {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    position: relative;
+    left: 96px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    right: 95px;
+  }
+  .tabs-header h1 {
+    font-size: 30px;
+  }
+}
+
+/* iPhone 11 Pro, iPhone 12 Pro, iPhone 14 (390px width) */
+@media only screen and (max-width: 390px) {
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .navbar-content {
+    flex-direction: row;
+  }
+
+  .navbar-logo img {
+    height: 34px;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .promo-banner {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    position: relative;
+    left: 96px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    right: 95px;
+  }
+  .tabs-header h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .navbar-logo img {
+    height: 38px;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .promo-banner {
+    font-size: 15px;
+  }
+
+  .navbar-toggle {
+    display: block;
+    position: relative;
+    left: 96px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    right: 95px;
+  }
+  .tabs-header h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+    position: relative;
+    left: 96px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    right: 95px;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .tabs-header h1 {
+    font-size: 30px;
+  }
 }
