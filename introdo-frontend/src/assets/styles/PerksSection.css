@@ -54,13 +54,12 @@
 .insights-description {
   background: linear-gradient(135deg, #FEBED9, #C8DDFF);
   padding: 18px 15px 12px 16px;
-  ;
   border-radius: 32px;
   color: #fff;
   height: 192px;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 41px;
+  margin-top: 3px;
   text-align: center;
 }
 
@@ -194,7 +193,7 @@
   width: 82%;
   margin-left: 34px;
   position: relative;
-  margin-top: 41px;
+  margin-top: 83px;
   z-index: 1;
 }
 
@@ -567,18 +566,19 @@
   position: relative;
   right: 25px;
   border-bottom-left-radius: 18px;
-  top: 10px;
-  background-image: url('../images/vector.png');;
+  top: 36px;
+  background-image: url('../images/vector.png');
+  ;
   background-position: left;
   background-size: 90% 106%;
   background-repeat: no-repeat;
 }
 
 .cloud-powered-savings .cloud-icon {
-  width: 50px;
+  width: 45px;
   height: auto;
   position: absolute;
-  top: 129px;
+  top: 142px;
   left: 8%;
   transform: translateX(-50%);
   background-color: #FF8100;
@@ -598,6 +598,1015 @@
   .perks-grid .rock-solid-compliance {
     grid-column: span 2;
   }
+
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 1;
+  }
+
+  .text-center {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .payroll-info-container {
+    padding: 19px;
+    margin-top: 47px;
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .skeleton-text {
+    width: 76px;
+  }
+
+  .text-muted {
+    font-size: 9px !important;
+  }
+
+  .user-details-container {
+    margin-top: 89px;
+  }
+
+  .smart-insights {
+    height: 53%;
+  }
+
+  .custom-button {
+    padding: 10px 43px;
+    width: 8%;
+    font-size: 14px;
+    margin-top: 62px;
+    margin-left: 178px;
+  }
+
+  .second-row .col-3 {
+    right: 5px;
+  }
+
+  .third-row .col-3 {
+    right: 31px;
+  }
+
+  .fourth-row {
+    bottom: 86px;
+  }
+
+  .third-row .col-4 {
+    right: 17px;
+    height: 155px;
+    padding: 12px;
+  }
+
+  .global-payroll h1 {
+    font-size: 22px;
+  }
+
+  .insights-description h1 {
+    font-size: 22px;
+  }
+
+  .perk h2 {
+    font-size: 22px;
+  }
+
+  .rock-solid-compliance {
+    width: 101%;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .rock-solid-compliance .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 64.333333%;
+  }
+
+  .perks-container h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rock-solid-compliance .col-8 {
+    max-width: 97.666667%;
+  }
+
+  .cloud-powered-savings .col-7 {
+    max-width: 100.333333% !important;
+    position: relative;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 175%;
+    position: relative;
+    top: 128px;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings {
+    width: 103%;
+    height: 100%;
+    left: 0;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 179%;
+    position: relative;
+    top: 154px;
+    border-bottom-left-radius: 0;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings .cloud-icon {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 152%;
+    left: 21%;
+    transform: translateX(-50%);
+    background-color: #FF8100;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+  }
+
+}
+
+/* iPhone SE (2020) in portrait mode */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 1;
+  }
+
+  .text-center {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .payroll-info-container {
+    padding: 19px;
+    margin-top: 47px;
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .skeleton-text {
+    width: 76px;
+  }
+
+  .text-muted {
+    font-size: 9px !important;
+  }
+
+  .user-details-container {
+    margin-top: 89px;
+  }
+
+  .smart-insights {
+    height: 53%;
+  }
+
+  .custom-button {
+    padding: 10px 43px;
+    width: 8%;
+    font-size: 14px;
+    margin-top: 62px;
+    margin-left: 178px;
+  }
+
+  .second-row .col-3 {
+    right: 5px;
+  }
+
+  .third-row .col-3 {
+    right: 31px;
+  }
+
+  .fourth-row {
+    bottom: 86px;
+  }
+
+  .third-row .col-4 {
+    right: 17px;
+    height: 155px;
+    padding: 12px;
+  }
+
+  .global-payroll h1 {
+    font-size: 22px;
+  }
+
+  .insights-description h1 {
+    font-size: 22px;
+  }
+
+  .perk h2 {
+    font-size: 22px;
+  }
+
+  .rock-solid-compliance {
+    width: 101%;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .rock-solid-compliance .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 64.333333%;
+  }
+
+  .perks-container h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rock-solid-compliance .col-8 {
+    max-width: 97.666667%;
+  }
+
+  .cloud-powered-savings .col-7 {
+    max-width: 100.333333%!important;
+    position: relative;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 175%;
+    position: relative;
+    top: 128px;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings {
+    width: 100%;
+    height: 115%;
+    left: 0;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 179%;
+    position: relative;
+    top: 154px;
+    border-bottom-left-radius: 0;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings .cloud-icon {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 152%;
+    left: 21%;
+    transform: translateX(-50%);
+    background-color: #FF8100;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+  }
+}
+
+/* iPhone X/XS in portrait mode */
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 1;
+  }
+
+  .text-center {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .payroll-info-container {
+    padding: 19px;
+    margin-top: 47px;
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .skeleton-text {
+    width: 76px;
+  }
+
+  .text-muted {
+    font-size: 9px !important;
+  }
+
+  .user-details-container {
+    margin-top: 89px;
+  }
+
+  .smart-insights {
+    height: 53%;
+  }
+
+  .custom-button {
+    padding: 10px 43px;
+    width: 8%;
+    font-size: 14px;
+    margin-top: 62px;
+    margin-left: 178px;
+  }
+
+  .second-row .col-3 {
+    right: 5px;
+  }
+
+  .third-row .col-3 {
+    right: 31px;
+  }
+
+  .fourth-row {
+    bottom: 86px;
+  }
+
+  .third-row .col-4 {
+    right: 17px;
+    height: 155px;
+    padding: 12px;
+  }
+
+  .global-payroll h1 {
+    font-size: 22px;
+  }
+
+  .insights-description h1 {
+    font-size: 22px;
+  }
+
+  .perk h2 {
+    font-size: 22px;
+  }
+
+  .rock-solid-compliance {
+    width: 101%;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .rock-solid-compliance .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 64.333333%;
+  }
+
+  .perks-container h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rock-solid-compliance .col-8 {
+    max-width: 97.666667%;
+  }
+
+  .cloud-powered-savings .col-7 {
+    max-width: 100.333333% !important;
+    position: relative;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 175%;
+    position: relative;
+    top: 128px;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings {
+    width: 103%;
+    height: 100%;
+    left: 0;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 179%;
+    position: relative;
+    top: 154px;
+    border-bottom-left-radius: 0;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings .cloud-icon {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 152%;
+    left: 21%;
+    transform: translateX(-50%);
+    background-color: #FF8100;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+  }
+}
+
+
+
+/* iPhone 11/12/13/14 Pro Max in portrait mode */
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 1;
+  }
+
+  .text-center {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .payroll-info-container {
+    padding: 19px;
+    margin-top: 47px;
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .skeleton-text {
+    width: 76px;
+  }
+
+  .text-muted {
+    font-size: 9px !important;
+  }
+
+  .user-details-container {
+    margin-top: 89px;
+  }
+
+  .smart-insights {
+    height: 53%;
+  }
+
+  .custom-button {
+    padding: 10px 43px;
+    width: 8%;
+    font-size: 14px;
+    margin-top: 62px;
+    margin-left: 178px;
+  }
+
+  .second-row .col-3 {
+    right: 5px;
+  }
+
+  .third-row .col-3 {
+    right: 31px;
+  }
+
+  .fourth-row {
+    bottom: 86px;
+  }
+
+  .third-row .col-4 {
+    right: 17px;
+    height: 155px;
+    padding: 12px;
+  }
+
+  .global-payroll h1 {
+    font-size: 22px;
+  }
+
+  .insights-description h1 {
+    font-size: 22px;
+  }
+
+  .perk h2 {
+    font-size: 22px;
+  }
+
+  .rock-solid-compliance {
+    width: 101%;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .rock-solid-compliance .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 64.333333%;
+  }
+
+  .perks-container h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rock-solid-compliance .col-8 {
+    max-width: 97.666667%;
+  }
+
+  .cloud-powered-savings .col-7 {
+    max-width: 100.333333% !important;
+    position: relative;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 175%;
+    position: relative;
+    top: 128px;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings {
+    width: 103%;
+    height: 100%;
+    left: 0;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 179%;
+    position: relative;
+    top: 154px;
+    border-bottom-left-radius: 0;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings .cloud-icon {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 152%;
+    left: 21%;
+    transform: translateX(-50%);
+    background-color: #FF8100;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+  }
+
+}
+
+@media (max-width: 430px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 1;
+  }
+
+  .text-center {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .payroll-info-container {
+    padding: 19px;
+    margin-top: 47px;
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .skeleton-text {
+    width: 76px;
+  }
+
+  .text-muted {
+    font-size: 9px !important;
+  }
+
+  .user-details-container {
+    margin-top: 89px;
+  }
+
+  .smart-insights {
+    height: 53%;
+  }
+
+  .custom-button {
+    padding: 10px 43px;
+    width: 8%;
+    font-size: 14px;
+    margin-top: 62px;
+    margin-left: 178px;
+  }
+
+  .second-row .col-3 {
+    right: 5px;
+  }
+
+  .third-row .col-3 {
+    right: 31px;
+  }
+
+  .fourth-row {
+    bottom: 86px;
+  }
+
+  .third-row .col-4 {
+    right: 17px;
+    height: 155px;
+    padding: 12px;
+  }
+
+  .global-payroll h1 {
+    font-size: 22px;
+  }
+
+  .insights-description h1 {
+    font-size: 22px;
+  }
+
+  .perk h2 {
+    font-size: 22px;
+  }
+
+  .rock-solid-compliance {
+    width: 101%;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .rock-solid-compliance .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 64.333333%;
+  }
+
+  .perks-container h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rock-solid-compliance .col-8 {
+    max-width: 97.666667%;
+  }
+
+  .cloud-powered-savings .col-7 {
+    max-width: 100.333333% !important;
+    position: relative;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 175%;
+    position: relative;
+    top: 128px;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings {
+    width: 103%;
+    height: 100%;
+    left: 0;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 179%;
+    position: relative;
+    top: 154px;
+    border-bottom-left-radius: 0;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings .cloud-icon {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 152%;
+    left: 21%;
+    transform: translateX(-50%);
+    background-color: #FF8100;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+  }
+
+}
+
+/* Small devices (iPhones SE, 6, 7, 8) */
+@media only screen and (max-width: 375px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 1;
+  }
+
+  .text-center {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .payroll-info-container {
+    padding: 19px;
+    margin-top: 47px;
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .skeleton-text {
+    width: 76px;
+  }
+
+  .text-muted {
+    font-size: 9px !important;
+  }
+
+  .user-details-container {
+    margin-top: 89px;
+  }
+
+  .smart-insights {
+    height: 53%;
+  }
+
+  .custom-button {
+    padding: 10px 43px;
+    width: 8%;
+    font-size: 14px;
+    margin-top: 62px;
+    margin-left: 178px;
+  }
+
+  .second-row .col-3 {
+    right: 5px;
+  }
+
+  .third-row .col-3 {
+    right: 31px;
+  }
+
+  .fourth-row {
+    bottom: 86px;
+  }
+
+  .third-row .col-4 {
+    right: 17px;
+    height: 155px;
+    padding: 12px;
+  }
+
+  .global-payroll h1 {
+    font-size: 22px;
+  }
+
+  .insights-description h1 {
+    font-size: 22px;
+  }
+
+  .perk h2 {
+    font-size: 22px;
+  }
+
+  .rock-solid-compliance {
+    width: 101%;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .rock-solid-compliance .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 64.333333%;
+  }
+
+  .perks-container h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rock-solid-compliance .col-8 {
+    max-width: 97.666667%;
+  }
+
+  .cloud-powered-savings .col-7 {
+    max-width: 100.333333% !important;
+    position: relative;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 175%;
+    position: relative;
+    top: 128px;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings {
+    width: 103%;
+    height: 100%;
+    left: 0;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 179%;
+    position: relative;
+    top: 154px;
+    border-bottom-left-radius: 0;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings .cloud-icon {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 152%;
+    left: 21%;
+    transform: translateX(-50%);
+    background-color: #FF8100;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+  }
+
+}
+
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid .cloud-powered-savings,
+  .perks-grid .rock-solid-compliance {
+    grid-column: span 1;
+  }
+
+  .text-center {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .payroll-info-container {
+    padding: 19px;
+    margin-top: 47px;
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .skeleton-text {
+    width: 76px;
+  }
+
+  .text-muted {
+    font-size: 9px !important;
+  }
+
+  .user-details-container {
+    margin-top: 89px;
+  }
+
+  .smart-insights {
+    height: 53%;
+  }
+
+  .custom-button {
+    padding: 10px 43px;
+    width: 8%;
+    font-size: 14px;
+    margin-top: 62px;
+    margin-left: 178px;
+  }
+
+  .second-row .col-3 {
+    right: 5px;
+  }
+
+  .third-row .col-3 {
+    right: 31px;
+  }
+
+  .fourth-row {
+    bottom: 86px;
+  }
+
+  .third-row .col-4 {
+    right: 17px;
+    height: 155px;
+    padding: 12px;
+  }
+
+  .global-payroll h1 {
+    font-size: 22px;
+  }
+
+  .insights-description h1 {
+    font-size: 22px;
+  }
+
+  .perk h2 {
+    font-size: 22px;
+  }
+
+  .rock-solid-compliance {
+    width: 101%;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .rock-solid-compliance .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 64.333333%;
+  }
+
+  .perks-container h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rock-solid-compliance .col-8 {
+    max-width: 97.666667%;
+  }
+
+  .cloud-powered-savings .col-7 {
+    max-width: 100.333333% !important;
+    position: relative;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 175%;
+    position: relative;
+    top: 128px;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings {
+    width: 103%;
+    height: 100%;
+    left: 0;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 179%;
+    position: relative;
+    top: 154px;
+    border-bottom-left-radius: 0;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings .cloud-icon {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 152%;
+    left: 21%;
+    transform: translateX(-50%);
+    background-color: #FF8100;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -608,5 +1617,138 @@
   .perks-grid .cloud-powered-savings,
   .perks-grid .rock-solid-compliance {
     grid-column: span 1;
+  }
+
+  .text-center {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .payroll-info-container {
+    padding: 19px;
+    margin-top: 47px;
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .skeleton-text {
+    width: 76px;
+  }
+
+  .text-muted {
+    font-size: 9px !important;
+  }
+
+  .user-details-container {
+    margin-top: 89px;
+  }
+
+  .smart-insights {
+    height: 53%;
+  }
+
+  .custom-button {
+    padding: 10px 43px;
+    width: 8%;
+    font-size: 14px;
+    margin-top: 62px;
+    margin-left: 178px;
+  }
+
+  .second-row .col-3 {
+    right: 5px;
+  }
+
+  .third-row .col-3 {
+    right: 31px;
+  }
+
+  .fourth-row {
+    bottom: 86px;
+  }
+
+  .third-row .col-4 {
+    right: 17px;
+    height: 155px;
+    padding: 12px;
+  }
+
+  .global-payroll h1 {
+    font-size: 22px;
+  }
+
+  .insights-description h1 {
+    font-size: 22px;
+  }
+
+  .perk h2 {
+    font-size: 22px;
+  }
+
+  .rock-solid-compliance {
+    width: 101%;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .rock-solid-compliance .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 64.333333%;
+  }
+
+  .perks-container h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rock-solid-compliance .col-8 {
+    max-width: 97.666667%;
+  }
+
+  .cloud-powered-savings .col-7 {
+    max-width: 100.333333% !important;
+    position: relative;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 175%;
+    position: relative;
+    top: 128px;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings {
+    width: 103%;
+    height: 153%;
+    left: 0;
+  }
+
+  .cloud-powered-savings .avatar {
+    width: 176%;
+    position: relative;
+    top: 175px;
+    left: 58px;
+    border-bottom-left-radius: 0;
+    background-position: left;
+    background-size: 99% 124%;
+    background-repeat: no-repeat;
+  }
+
+  .cloud-powered-savings .cloud-icon {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 152%;
+    left: 93%;
+    transform: translateX(-50%);
+    background-color: #FF8100;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
   }
 }

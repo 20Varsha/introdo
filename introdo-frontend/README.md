@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Introdo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive UI developed using React for both web and mobile platforms based on Figma designs. The UI features dynamic elements such as auto-switching tabs and a progress bar synced with a timer.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Project Architecture](#project-architecture)
+- [Setup](#setup)
+- [Running the Application](#running-the-application)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project implements a responsive and dynamic user interface that switches between tabs automatically and includes a progress bar that updates over time. The interface adapts to both mobile and web platforms. Below are the key features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Features to Implement:
+1. **Tab Switching Feature**
+   - **Auto-Switch Mechanism:** Tabs switch automatically every 5 seconds.
+   - **Manual Interaction:** Manual tab switching by user resets the timer, providing a full 5-second interval before switching again.
+   - **Visual Feedback:** Highlights the active tab with a smooth transition effect.
 
-### `npm test`
+2. **Unlock The Perks Section**
+   - **Timer:** A timer runs from 14:00 to 14:59.
+   - **Progress Bar:** A progress bar syncs with the timer, filling from 0% to 100% as the time advances from 14:00 to 14:59.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
 
-### `npm run build`
+- **React**: UI framework used to build responsive components.
+- **CSS/SCSS**: Used for styling the components.
+- **React Hooks**: For state management and handling side effects (e.g., `useEffect` for timers).
+- **Figma Designs**: Used for layout and visual elements.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Architecture
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `src/`: Main source directory containing all the components and logic.
+  - `components/`: React components for UI elements like Tabs, Timer, and ProgressBar.
+  - `styles/`: CSS or SCSS files for styling.
+  - `assets/`: Any images or static files.
+  - `App.js`: Main file where the components are integrated.
+  - `index.js`: Entry point of the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ensure you have the following installed:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js (v14 or above)
+- npm (v6 or above)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/20Varsha/introdo.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Navigate to the project directory:
+cd introdo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install the project dependencies:
+npm install
 
-### Code Splitting
+Start the development server:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open the app in your browser:
 
-### Analyzing the Bundle Size
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

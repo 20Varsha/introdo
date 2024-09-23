@@ -214,13 +214,13 @@ const Perks = () => {
         {/* Cloud-Powered Savings Section */}
         <div className="cloud-powered-savings">
           <div className="row">
-            <div className="col-6">
+            <div className="col-5">
               <div className="avatar-wrapper">
                 <img src={cloud} alt="Cloud Icon" className="cloud-icon" />
                 <img src={femaleAvatar} alt="Female Avatar" className="avatar" />
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-7">
               <h2 className="text-light">Cloud-Powered Savings</h2>
               <p className="content">
                 Centralize people management with one HR software. Save time and cut

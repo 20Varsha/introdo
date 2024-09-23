@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/styles/Footer.css';
 import googlePlay from '../assets/images/google-play.png';
 import appleStore from '../assets/images/apple.png';
@@ -14,11 +14,14 @@ import certification3 from "../assets/images/certificate3.png";
 import certification4 from "../assets/images/certificate4.png";
 
 const Footer = () => {
+    const [showProducts, setShowProducts] = useState(false);
+    const [showResources, setShowResources] = useState(false);
+    const [showPlatform, setShowPlatform] = useState(false);
+
     return (
         <footer className="footer">
             <div className="container">
                 <div className="subscribe-section mt-5">
-
                     <div className="header-container">
                         <img src={logo} alt="Logo" className="logo" />
                         <span className="introdo-text ml-4 pl-2">Introdo</span>
@@ -48,8 +51,10 @@ const Footer = () => {
 
                 <div className="footer-columns">
                     <div className="column">
-                        <h3>Products</h3>
-                        <ul>
+                        <h3 onClick={() => setShowProducts(!showProducts)}>
+                            Products<span className="arrow">&#9660;</span>
+                        </h3>
+                        <ul className={`footer-list ${showProducts ? 'show' : ''}`}>
                             <li>Core HR</li>
                             <li>Employee Management</li>
                             <li>Leave Management</li>
@@ -62,8 +67,10 @@ const Footer = () => {
                     </div>
 
                     <div className="column">
-                        <h3>Resources</h3>
-                        <ul>
+                        <h3 onClick={() => setShowResources(!showResources)}>
+                            Resources<span className="arrow">&#9660;</span>
+                        </h3>
+                        <ul className={`footer-list ${showResources ? 'show' : ''}`}>
                             <li>All Resources</li>
                             <li>Blogs</li>
                             <li>Case Studies</li>
@@ -73,8 +80,10 @@ const Footer = () => {
                     </div>
 
                     <div className="column">
-                        <h3>Platform</h3>
-                        <ul>
+                        <h3 onClick={() => setShowPlatform(!showPlatform)}>
+                            Platform<span className="arrow">&#9660;</span>
+                        </h3>
+                        <ul className={`footer-list ${showPlatform ? 'show' : ''}`}>
                             <li>Log In</li>
                             <li>Schedule a Demo</li>
                             <li>Use Cases</li>
@@ -108,6 +117,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                
                 <hr className='customize-hr' />
                 <div className="footer-bottom">
                     <div className="social-icons">
